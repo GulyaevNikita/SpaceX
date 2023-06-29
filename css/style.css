@@ -58,6 +58,19 @@ body {
   --color-orange: #df6c1c;
 }
 
+body::-webkit-scrollbar {
+  width: 12px; /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-white); /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray); /* цвет бегунка */
+  border-radius: 5px; /* округлось бегунка */
+}
+
 .svg-decor {
   position: absolute;
 }
@@ -311,6 +324,7 @@ body {
   border-image-slice: 1;
   overflow: hidden;
   z-index: 1;
+  cursor: pointer;
 }
 
 .offer__button--hover {

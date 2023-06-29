@@ -11,7 +11,6 @@ burger.addEventListener("click",
 
     menu.classList.toggle("menu--active");
 
-    menuLinks.classList.toggle('menu__list-item--active');
   }
 );
 
