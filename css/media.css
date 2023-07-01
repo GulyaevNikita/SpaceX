@@ -1,7 +1,5 @@
 @media (max-width: 1170px) {
-  .header__container {
-    padding: 0;
-  }
+  /* Адаптив для бургера (START) */
   .header__menu {
     position: fixed;
     padding-top: 97px;
@@ -9,7 +7,7 @@
     height: 100vh;
     visibility: hidden;
     transform: translateX(180%);
-    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
 
   .menu {
@@ -24,10 +22,6 @@
     transition: 0.3s ease-in-out;
   }
 
-  .menu__list-item:not(:last-child) {
-    margin-right: 0;
-  }
-
   .menu--active {
     display: block;
     position: fixed;
@@ -37,29 +31,17 @@
     z-index: 1000;
     transform: translateX(0);
     background-color: rgba(0, 0, 0, 0.7);
-    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
+  /* Адаптив для бургера (END) */
 }
 
-@media (max-width: 780px) {
-  .header__logo {
-    width: 100%;
-    justify-content: start;
-    border: none;
-  }
-
-  .header__logo-svg-decor {
-    display: none;
-  }
-
-  .hero__container {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+@media (max-width: 992px) {
+  /* Адаптив для блока с заголовком и кнопкой (START) */
 
   .offer {
+    text-align: center;
     align-items: center;
-    margin-bottom: 20px;
   }
 
   .offer__title {
@@ -70,13 +52,21 @@
     font-size: 22px;
   }
 
-  .about-list__item {
-    -webkit-box-shadow: -42px -49px 70px -62px rgba(99, 99, 120, 0.1) inset;
-    -moz-box-shadow: -42px -49px 70px -62px rgba(99, 99, 120, 1) inset;
-    box-shadow: -42px -49px 70px -62px rgba(99, 99, 120, 1) inset;
+  .row-hero {
+    justify-content: center;
   }
 
-  .text--second {
-    font-size: 36px;
+  /* Адаптив для блока с заголовком и кнопкой (END) */
+
+  /* Адаптив для текста карточек (START) */
+
+  .text--main {
+    font-size: 40px;
   }
+
+  .text--description {
+    font-size: 13px;
+  }
+
+  /* Адаптив для текста карточек (END) */
 }

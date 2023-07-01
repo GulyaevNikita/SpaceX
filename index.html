@@ -7,157 +7,174 @@
     <title>Space-X</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css" />
+    <link rel="stylesheet" href="css/template.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <script src="js/index.js" defer></script>
+    <link href="img/space.jpg" rel="shortcut icon" type="image/x-icon" />
+    <script src="js/template.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <div class="container header__container flex">
-        <div class="header__logo flex">
-          <a href="#" class="header__logo-link">
-            <svg class="header__logo-svg">
-              <use xlink:href="img/_sprite.svg#logo"></use>
+      <div class="container header__container">
+        <div class="row justify-content-between">
+          <div class="header__logo flex col-8 col-sm-5 col-md-5 col-lg-3">
+            <a href="#" class="header__logo-link">
+              <svg class="header__logo-svg">
+                <use xlink:href="img/_sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <svg class="header__logo-svg-decor svg-decor">
+              <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
+                <image
+                  x="0"
+                  y="0"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAkSURBVBhXY/iPB4AkcWGsgjCMVRCGsQrCMFZBGMYqCMX//wMAKzKfYcHLIn8AAAAASUVORK5CYII="
+                  height="7px"
+                  width="7px"
+                />
+              </g>
             </svg>
-          </a>
-          <svg class="header__logo-svg-decor svg-decor">
-            <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
-              <image
-                x="0"
-                y="0"
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAkSURBVBhXY/iPB4AkcWGsgjCMVRCGsQrCMFZBGMYqCMX//wMAKzKfYcHLIn8AAAAASUVORK5CYII="
-              />
-            </g>
-          </svg>
-          <svg class="header__logo-svg-decor svg-decor">
-            <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
-              <image
-                x="0"
-                y="0"
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAkSURBVBhXY/iPB4AkcWGsgjCMVRCGsQrCMFZBGMYqCMX//wMAKzKfYcHLIn8AAAAASUVORK5CYII="
-              />
-            </g>
-          </svg>
-          <svg class="header__logo-svg-decor svg-decor">
-            <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
-              <image
-                x="0"
-                y="0"
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAkSURBVBhXY/iPB4AkcWGsgjCMVRCGsQrCMFZBGMYqCMX//wMAKzKfYcHLIn8AAAAASUVORK5CYII="
-              />
-            </g>
-          </svg>
-          <svg class="header__logo-svg-decor svg-decor">
-            <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
-              <image
-                x="0"
-                y="0"
-                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAkSURBVBhXY/iPB4AkcWGsgjCMVRCGsQrCMFZBGMYqCMX//wMAKzKfYcHLIn8AAAAASUVORK5CYII="
-              />
-            </g>
-          </svg>
+            <svg class="header__logo-svg-decor svg-decor">
+              <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
+                <image
+                  x="0"
+                  y="0"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAkSURBVBhXY/iPB4AkcWGsgjCMVRCGsQrCMFZBGMYqCMX//wMAKzKfYcHLIn8AAAAASUVORK5CYII="
+                  height="7px"
+                  width="7px"
+                />
+              </g>
+            </svg>
+            <svg class="header__logo-svg-decor svg-decor">
+              <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
+                <image
+                  x="0"
+                  y="0"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAkSURBVBhXY/iPB4AkcWGsgjCMVRCGsQrCMFZBGMYqCMX//wMAKzKfYcHLIn8AAAAASUVORK5CYII="
+                  height="7px"
+                  width="7px"
+                />
+              </g>
+            </svg>
+            <svg class="header__logo-svg-decor svg-decor">
+              <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
+                <image
+                  x="0"
+                  y="0"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAkSURBVBhXY/iPB4AkcWGsgjCMVRCGsQrCMFZBGMYqCMX//wMAKzKfYcHLIn8AAAAASUVORK5CYII="
+                  height="7px"
+                  width="7px"
+                />
+              </g>
+            </svg>
+          </div>
+          <nav class="header__menu align-self-center col-7">
+            <ul class="menu list-reset flex justify-content-between">
+              <li class="menu__list-item">
+                <a href="#" class="link-reset menu__link text">Главная</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="link-reset menu__link text">Технологии</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="link-reset menu__link text"
+                  >График полетов</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="link-reset menu__link text">Гарантии</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="link-reset menu__link text">О компании</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#" class="link-reset menu__link text">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            type="button"
+            class="burger-menu align-self-center justify-content-end col-1"
+            tabindex="0"
+            aria-label="Открыть меню"
+          >
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+            <span class="burger-menu__line"></span>
+          </button>
         </div>
-        <nav class="header__menu">
-          <ul class="menu list-reset flex">
-            <li class="menu__list-item">
-              <a href="#" class="link-reset menu__link text">Главная</a>
-            </li>
-            <li class="menu__list-item">
-              <a href="#" class="link-reset menu__link text">Технологии</a>
-            </li>
-            <li class="menu__list-item">
-              <a href="#" class="link-reset menu__link text">График полетов</a>
-            </li>
-            <li class="menu__list-item">
-              <a href="#" class="link-reset menu__link text">Гарантии</a>
-            </li>
-            <li class="menu__list-item">
-              <a href="#" class="link-reset menu__link text">О компании</a>
-            </li>
-            <li class="menu__list-item">
-              <a href="#" class="link-reset menu__link text">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          type="button"
-          class="burger-menu"
-          tabindex="0"
-          aria-label="Открыть меню"
-        >
-          <div class="burger-menu__line"></div>
-          <div class="burger-menu__line"></div>
-          <div class="burger-menu__line"></div>
-        </button>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container hero__container flex">
-          <div class="offer flex">
-            <h1 class="offer__title title">путешествие</h1>
-            <p class="offer__subtitle text">на красную планету</p>
-            <a class="offer__button">
-              <svg
-                class="svg-decor offer__button-svg-decor"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
-                  <image
-                    x="0"
-                    y="0"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVDhPdZLLCsIwEEXrA0UorhTFhYiL/of//1HxHs2E5CYdOLRJ5sxMQ6eUkrNZocmrF564zfh+I8ZmJO/EPj/BizRiLRzEMcN7FAm5E0m6iKd4ibd4iJNALl19zLMYBTJF6VrEuiOj3QSdFvERBGvOSlcXqUhlRpsFMsHYq2LIHJKETCeCbx6OOpJJvAviKrrLcTFkqtOZC4tuITZ/zkh24qwTXR7xy3PJ6YQ/afoCfxBWOuan30AAAAAASUVORK5CYII="
-                  />
-                </g>
-              </svg>
-              <svg
-                class="svg-decor offer__button-svg-decor"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
-                  <image
-                    x="0"
-                    y="0"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVDhPdZLLCsIwEEXrA0UorhTFhYiL/of//1HxHs2E5CYdOLRJ5sxMQ6eUkrNZocmrF564zfh+I8ZmJO/EPj/BizRiLRzEMcN7FAm5E0m6iKd4ibd4iJNALl19zLMYBTJF6VrEuiOj3QSdFvERBGvOSlcXqUhlRpsFMsHYq2LIHJKETCeCbx6OOpJJvAviKrrLcTFkqtOZC4tuITZ/zkh24qwTXR7xy3PJ6YQ/afoCfxBWOuan30AAAAAASUVORK5CYII="
-                  />
-                </g>
-              </svg>
-              Начать путешевствие
-              <div class="offer__button--hover"></div>
-            </a>
+        <div class="container">
+          <div class="row row-hero">
+            <div class="offer col-12 col-sm-12 col-md-6 col-lg-6 flex">
+              <h1 class="title offer__title col-12">путешествие</h1>
+              <p class="text offer__subtitle col-12">на красную планету</p>
+              <a class="offer__button col-8 col-sm-5 col-md-5 col-lg-5">
+                <svg
+                  class="svg-decor offer__button-svg-decor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
+                    <image
+                      x="0"
+                      y="0"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVDhPdZLLCsIwEEXrA0UorhTFhYiL/of//1HxHs2E5CYdOLRJ5sxMQ6eUkrNZocmrF564zfh+I8ZmJO/EPj/BizRiLRzEMcN7FAm5E0m6iKd4ibd4iJNALl19zLMYBTJF6VrEuiOj3QSdFvERBGvOSlcXqUhlRpsFMsHYq2LIHJKETCeCbx6OOpJJvAviKrrLcTFkqtOZC4tuITZ/zkh24qwTXR7xy3PJ6YQ/afoCfxBWOuan30AAAAAASUVORK5CYII="
+                    />
+                  </g>
+                </svg>
+                <svg
+                  class="svg-decor offer__button-svg-decor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g transform="matrix(1.3333334 0 0 1.3333334 0 0)">
+                    <image
+                      x="0"
+                      y="0"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVDhPdZLLCsIwEEXrA0UorhTFhYiL/of//1HxHs2E5CYdOLRJ5sxMQ6eUkrNZocmrF564zfh+I8ZmJO/EPj/BizRiLRzEMcN7FAm5E0m6iKd4ibd4iJNALl19zLMYBTJF6VrEuiOj3QSdFvERBGvOSlcXqUhlRpsFMsHYq2LIHJKETCeCbx6OOpJJvAviKrrLcTFkqtOZC4tuITZ/zkh24qwTXR7xy3PJ6YQ/afoCfxBWOuan30AAAAAASUVORK5CYII="
+                    />
+                  </g>
+                </svg>
+                Начать путешевствие
+                <div class="offer__button--hover"></div>
+              </a>
+            </div>
+            <ul class="about-list col-12 col-sm-12 col-md-5 col-lg-5">
+              <li class="about-list__item col-12 col-sm-12 col-md-12 flex">
+                <p class="text text--description">Мы</p>
+                <div class="about-list__meaning flex">
+                  <p class="text text--main">1</p>
+                  <p class="text text--description">на рынке</p>
+                </div>
+              </li>
+              <li class="about-list__item col-12 col-sm-12 col-md-12 flex">
+                <p class="text text--description">гарантируем</p>
+                <div class="about-list__meaning flex">
+                  <p class="text text text--main">50%</p>
+                  <p class="text text--description">безопасность</p>
+                </div>
+              </li>
+              <li class="about-list__item col-12 col-sm-12 col-md-12 flex">
+                <p class="text text--description">календарик за</p>
+                <div class="about-list__meaning flex">
+                  <p class="text text text--main">2001г.</p>
+                  <p class="text text--description">в подарок</p>
+                </div>
+              </li>
+              <li class="about-list__item col-12 col-sm-12 col-md-12 flex">
+                <p class="text text--description">путешевствие</p>
+                <div class="about-list__meaning flex">
+                  <p class="text text text--main">597</p>
+                  <p class="text text--description">дней</p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul class="about-list">
-            <li class="about-list__item flex">
-              <p class="text text--first">Мы</p>
-              <div class="about-list__meaning flex">
-                <p class="text text--second">1</p>
-                <p class="text">на рынке</p>
-              </div>
-            </li>
-            <li class="about-list__item flex">
-              <p class="text text--first">гарантируем</p>
-              <div class="about-list__meaning flex">
-                <p class="text text text--second">50%</p>
-                <p class="text">безопасность</p>
-              </div>
-            </li>
-            <li class="about-list__item flex">
-              <p class="text text--first">календарик за</p>
-              <div class="about-list__meaning flex">
-                <p class="text text text--second">2001г.</p>
-                <p class="text">в подарок</p>
-              </div>
-            </li>
-            <li class="about-list__item flex">
-              <p class="text text--first">путешевствие</p>
-              <div class="about-list__meaning flex">
-                <p class="text text text--second">597</p>
-                <p class="text">дней</p>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
     </main>
